@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="master.css" />
+    <title>Newsletter Sign-Up | Frontend Mentor</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="left-side">
+        <h1>Stay Updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="left-side-content">
+          <li>
+            <img src="assets/images/icon-list.svg" alt="Check icon" />
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="Check icon" />
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="Check icon" />
+            <span>And much more!</span>
+          </li>
+        </ul>
+        <form method="post" action="#" novalidate>
+          <div class="input-box">
+            <div class="label-error">
+              <label for="email">Email address</label>
+              <strong>Valid email required</strong>
+            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+            />
+          </div>
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+      <aside class="right-side">
+        <picture>
+          <!-- Tablet range -->
+          <source
+            media="(min-width: 528px) and (max-width: 800px)"
+            srcset="assets/images/illustration-sign-up-tablet.svg"
+          />
+
+          <!-- Mobile range -->
+          <source
+            media="(max-width: 527px)"
+            srcset="assets/images/illustration-sign-up-mobile.svg"
+          />
+
+          <!-- Desktop fallback -->
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="Newsletter illustration"
+          />
+        </picture>
+      </aside>
+    </main>
+    <div class="container-alert hidden">
+      <div class="alert-message">
+        <img src="assets/images/icon-success.svg" alt="" />
+        <h1>Thanks for Subscribing!</h1>
+        <p>
+          A confirmation email has been sent to <span></span>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button>Dismiss message</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
